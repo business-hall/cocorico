@@ -36,6 +36,8 @@ parameters:
     cocorico.admin: admin
     #Admin Web JMS translations activation
     cocorico.admin_translation: false
+    #To check if site texts are translatable
+    cocorico.check_translation: false
 
     #Microsoft Translator key
     cocorico.translator.secret.key: ~
@@ -91,20 +93,3 @@ parameters:
     ##Set to true in dev env to avoid to ask to mangopay to manually validate a bank wire
     ##Set to false in prod env
     cocorico.bankwire_checking_simulation: false
-
-    ################################# Optional bundles #################################
-
-    #SMS
-    cocorico_sms.enabled: false
-    cocorico_sms.phone_check: false
-    cocorico_sms.thread_notification: false
-    cocorico_sms.ovh_endpoint_name:      "ovh-eu"
-    cocorico_sms.ovh_application_key:    "Application Key"
-    cocorico_sms.ovh_application_secret: "Application Secret"
-    cocorico_sms.ovh_consumer_key:       "Consumer Key"
-    cocorico_sms.ovh_service_name:       "Service Name"
-    cocorico_sms.ovh_debug: false
-
-    #Deposit
-    #Booking deposit refund generation delay in minutes.
-    #cocorico_listing_deposit.booking.deposit_refund_delay: ~
